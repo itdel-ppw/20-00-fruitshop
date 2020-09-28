@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fruits</title>
+    <link rel="icon" type="image/ico" href="/images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">FruitShop</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.php">About</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="cart.php">Cart</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="account.php">Accout</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="login.php">Login</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-2 mb-2">
+        <h1 class="text-center">One Stop FruitShop - Edit Fruit</h1>
+    </div>
+    <div class="container mt-4 text-center">
+        <img class="img-fluid rounded mx-auto" src="/images/grape.jpg">
+    </div>
+    <div class="container mt-1">
+        <form action="save-fruit.php" method="POST">
+            <input type="hidden" name="id" value="0e21b9e56243d2915bd56d09034cecf5a4e20c86a928cb63623acfb83494217c">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name"><strong>Name:</strong></label>
+                        <input class="form-control input-sm" type="text" name="name" id="name" value="Grape">
+                    </div>
+                    <div class="form-group">
+                        <label for="latin"><strong>Latin Name:</strong></label>
+                        <input class="form-control input-sm" type="text" name="latin" id="latin" value="Vitis vinifera">
+                    </div>
+                    <div class="form-group">
+                        <label for="color"><strong>Color:</strong></label>
+                        <input class="form-control input-sm" type="text" name="color" id="color"
+                            value="Green, Purple, Red, & White">
+                    </div>
+                    <div class="form-group">
+                        <label for="price"><strong>Price (USD):</strong></label>
+                        <input class="form-control input-sm" type="text" name="price" id="price" value="3.40">
+                    </div>
+                </div>
+                <div class="col-md-6 border-left">
+                    <div class="form-group">
+                        <label for="description"><strong>Description:</strong></label>
+                        <textarea class="form-control input-sm" type="text" name="description" id="description"
+                            rows="2">Very delicious.</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="image"><strong>Image (jpeg):</strong></label>
+                        <input class="form-control-file" type="file" name="image" id="image">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-10">
+                    <div class="text-right">
+                        <input class="btn btn-sm btn-success" type="submit" value="Save Fruit">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
