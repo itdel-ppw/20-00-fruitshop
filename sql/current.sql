@@ -37,8 +37,8 @@ DROP TABLE IF EXISTS `cart`;
 
 CREATE TABLE `cart` (
   `id` char(64) NOT NULL,
-  `payment` varchar(64) NOT NULL,
-  `fruit` varchar(64) NOT NULL,
+  `payment` char(64) DEFAULT NULL,
+  `fruit` char(64) NOT NULL,
   `amount` int(2) unsigned NOT NULL DEFAULT 0,
   `price` float(6,2) unsigned NOT NULL DEFAULT 0.00,
   `total_price` float(6,2) unsigned NOT NULL DEFAULT 0.00,
